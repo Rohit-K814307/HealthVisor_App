@@ -1,0 +1,94 @@
+.healthvisor__header {
+    display: flex;
+    flex-direction: row;
+}
+
+.healthvisor__header-content {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+
+    margin-right: 5rem;
+}
+
+.healthvisor__header-content h1 {
+    font-family: var(--font-family);
+    font-weight: 800;
+    font-size: 62px;
+    line-height: 75px;
+    letter-spacing: -0.04em;
+    color:white;
+
+    padding-left:13%;
+}
+
+.healthvisor__header-image {
+    max-width:60%;
+    max-height:500px;
+    display:flex;
+    flex-direction:column;
+
+    padding-bottom:20%;
+}
+
+.healthvisor__header-content__input {
+    width: 130%;
+    margin: 2rem 0 1rem;
+
+    display: flex;
+    flex-direction: row;
+
+    padding-left:12%;
+}
+
+.healthvisor__header-content__input button {
+    flex: 0.6;
+    width: 50px;
+    min-height: 50px;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    background: #FF6565;
+    border: 2px solid #FF6565;
+    border-radius:25px;
+    color: #fff;
+    cursor: pointer;
+    outline: none;
+
+    border-radius:25px;
+}
+
+@media screen and (max-width: 1050px) {
+    .healthvisor__header {
+        flex-direction: column;
+    }
+
+    .healthvisor__header-content {
+        margin: 0 0 3rem;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .healthvisor__header-content h1 {
+        font-size: 48px;
+        line-height: 60px;
+    }
+    .healthvisor__header-content__input button {
+        font-size: 16px;
+        line-height: 24px;
+    }
+}
+
+@media screen and (max-width: 490px) {
+    .healthvisor__header-content h1 {
+        font-size: 36px;
+        line-height: 48px;
+    }
+    .healthvisor__header-content__input button {
+        font-size: 12px;
+        line-height: 16px;
+    }
+}
