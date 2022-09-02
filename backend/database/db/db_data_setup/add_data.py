@@ -1,6 +1,6 @@
 import psycopg2
 import json
-from Get_data import Get_data as G
+from get_data import Get_data as G
 
 conn = None
 cur = None
@@ -12,7 +12,6 @@ try:
         user="postgres",
         password="password")
     cur = conn.cursor()
-    cur.execute("DROP TABLE IF EXISTS primarytable")
     print("connected")
 
 

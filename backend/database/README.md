@@ -19,4 +19,5 @@ Make sure to run the python file to add the data:
 
 ## start database
 
-`docker run healthvisordb-container`
+`docker run -d --name healthvisordb-container -p 5432:5432 hvdatabaseimg` 
+ - for the above, make sure to save the container (with the data in it) as an image to do the run
