@@ -1,0 +1,63 @@
+Massive data link: https://data.cdc.gov  
+
+
+Health Visor Database id
+Cdc soda api key
+Dataset Full Label
+
+
+podst
+https://data.cdc.gov/resource/s2qv-b27b.json 
+DHDS - Prevalence of Disability Status and Types
+
+
+cov19vac
+https://data.cdc.gov/resource/8xkx-amqh.json 
+COVID-19 Vaccinations in the United States,County
+
+
+dths
+https://data.cdc.gov/resource/ynw2-4viq.json 
+Provisional Death Counts for Influenza, Pneumonia, and COVID-19
+
+
+adshstat
+https://data.cdc.gov/resource/25m4-6qqq.json 
+NHIS Adult Summary Health Statistics
+
+
+medchars
+https://data.cdc.gov/resource/2g8y-scu5.json 
+DQS Medicaid coverage among persons under age 65, by selected 
+characteristics: United States
+
+
+covdths
+https://data.cdc.gov/resource/k8wy-p9cg.json 
+Provisional COVID-19 Deaths by County, and Race and Hispanic Origin
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
