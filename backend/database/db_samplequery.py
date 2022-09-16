@@ -13,7 +13,7 @@ try:
 
     cursor = conn.cursor()
 
-    cursor.execute("select * from mainTable")
+    cursor.execute("SELECT * FROM mainTable")
     records = cursor.fetchall()
     print(records)
 except (Exception, psycopg2.Error) as error:
