@@ -1,0 +1,3 @@
+.bootstrap-ui {
+    @import "bootstrap/dist/css/bootstrap.min.css";
+}

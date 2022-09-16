@@ -10,6 +10,7 @@ import {Getstarted,Home}from './pages/index';
   
 function App() {
   return (
+    <div class="app-container">
       <Router>
         <Navbar />
 
@@ -19,6 +20,7 @@ function App() {
         </Routes>
 
       </Router>
+      </div>
   );
 };
   

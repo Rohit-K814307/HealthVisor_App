@@ -1,6 +1,7 @@
 import React from 'react';
 import './getstarted.css';
 import Footer from '../../components/footer/Footer';
+import BasicExample from './accordion_visor/AccordionVisor';
 
 const Getstarted = () => {
     return (
@@ -24,7 +25,7 @@ const Getstarted = () => {
                 </div>
 
             </div>
-
+            <BasicExample />
             <Footer />
         </div>
     );
