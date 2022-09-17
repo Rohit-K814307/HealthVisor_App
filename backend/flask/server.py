@@ -30,8 +30,14 @@ def podst(year:str, locationabbr:str):
         location = params.paramizer(locationabbr)
     else:
         location = locationabbr
-    output, loc = query_podst.get_podst_data(year=year,locationabbr=location)
-    return {"vals":output,"loc":loc}
+
+    if year != "all":
+        year = params.paramizer(year)
+    else:
+        year=year
+
+    output, loc, years = query_podst.get_podst_data(year=year,locationabbr=location)
+    return {"vals":output,"loc":loc, "year":years}
 
     
 
