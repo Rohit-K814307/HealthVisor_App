@@ -8,10 +8,19 @@ export default function Podst() {
         year: "",
     });
 
+    const [year,setYear] = useState("all");
+    const [loc,setLoc] = useState("all");
+
+    const handleChangeYear = (e) => {
+        setYear(e.target.value);
+      };
+    
+    const handleChangeLoc = (e) => {
+        setLoc(e.target.value);
+    }
+
     useEffect(() => {
-        // Using fetch to fetch the api from 
-        // flask server it will be redirected to proxy
-        fetch("http://127.0.0.1:5000/podst/" + document.getElementById('years').value + `/` + document.getElementById('locs').value).then((res) =>
+        fetch("http://127.0.0.1:5000/podst/" + year + `/` + loc).then((res) =>
             res.json().then((data) => {
                 // Setting a data from api
                 setdata({
@@ -21,7 +30,7 @@ export default function Podst() {
                 });
             })
         );
-    }, []);
+    }, [year, loc]);
 
     return(
         <div className="podst-container">
@@ -29,7 +38,7 @@ export default function Podst() {
                 <div className="param">
                     <h1>What years do you want to visualize?</h1>
                     <form>
-                        <select id="years">
+                        <select id="years" onChange={handleChangeYear}>
                             <option value="all" selected="selected">All</option>
                             <option value="2019">2019</option>
                             <option value="2018">2018</option>
@@ -44,7 +53,7 @@ export default function Podst() {
                 <div className="param">
                     <h1>What locations do you want to visualize?</h1>
                     <form>
-                        <select id="locs">
+                        <select id="locs" onChange={handleChangeLoc}>
                             <option value="all" selected="selected">All</option>
                             <option value="VA">VA</option>
                             <option value="AR">AR</option>
