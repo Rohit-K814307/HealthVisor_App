@@ -1,91 +1,63 @@
-import React, { useState, useEffect } from 'react';
-import { Dropdown, Option } from '../createparams';
-import './podst.css'
+import React from 'react';
+import { useState, useEffect } from "react";
 
+export default function Podst() {
+    const [data, setdata] = useState({
+        loc: "",
+        vals: 0,
+        year: "",
+    });
 
+    useEffect(() => {
+        // Using fetch to fetch the api from 
+        // flask server it will be redirected to proxy
+        fetch("http://127.0.0.1:5000/podst/" + document.getElementById('years').value + `/` + document.getElementById('locs').value).then((res) =>
+            res.json().then((data) => {
+                // Setting a data from api
+                setdata({
+                    loc: data.loc,
+                    vals: data.vals,
+                    year: data.ear,
+                });
+            })
+        );
+    }, []);
 
-function Podst() {
-
-    
-
-
-    const [optionValue_startyear, setOptionValue_startyear] = useState("");
-    const handleSelect_startyear = (e) => {
-        console.log(e.target.value);
-        setOptionValue_startyear(e.target.value);
-    };
-
-    const [optionValue_endyear, setOptionValue_endyear] = useState("");
-    const handleSelect_endyear = (e) => {
-        console.log(e.target.value);
-        setOptionValue_endyear(e.target.value);
-    };
-
-    const [optionValue_location, setOptionValue_location] = useState("");
-    const handleSelect_location = (e) => {
-        console.log(e.target.value);
-        setOptionValue_location(e.target.value);
-    };
-
-    return (
-        <div class="podst-container">
-
-            <div class="params">
-
-                <div class="param yearstart">
-                    <Dropdown
-                        formLabel="Enter the start year to view"
-                        buttonText="Ready!"
-                        onChange={handleSelect_startyear}
-                        action="https://jsonplaceholder.typicode.com/posts"
-                    >
-                        <Option selected value="Click to see options" />
-                        <Option value="Option 1" />
-                        <Option value="Option 2" />
-                        <Option value="Option 3" />
-                    </Dropdown> 
+    return(
+        <div className="podst-container">
+            <div className="params">
+                <div className="param">
+                    <h1>What years do you want to visualize?</h1>
+                    <form>
+                        <select id="years">
+                            <option value="all" selected="selected">All</option>
+                            <option value="2019">2019</option>
+                            <option value="2018">2018</option>
+                        </select>
+                    </form>
                 </div>
 
-                <div class="paramSpace">
-                    <p>    </p>
+                <div className="paramSpace">
+                    <p>   </p>
                 </div>
 
-                <div class="param yearend">
-                    <Dropdown
-                        formLabel="Enter the end year to view"
-                        buttonText="Ready!"
-                        onChange={handleSelect_endyear}
-                        action="https://jsonplaceholder.typicode.com/posts"
-                    >
-                        <Option selected value="Click to see options" />
-                        <Option value="Option 1" />
-                        <Option value="Option 2" />
-                        <Option value="Option 3" />
-                    </Dropdown>
+                <div className="param">
+                    <h1>What locations do you want to visualize?</h1>
+                    <form>
+                        <select id="locs">
+                            <option value="all" selected="selected">All</option>
+                            <option value="VA">VA</option>
+                            <option value="AR">AR</option>
+                        </select>
+                    </form>
                 </div>
 
-                <div class="paramSpace">
-                    <p>    </p>
-                </div>
-
-                <div class="param locationabbr">
-                <Dropdown
-                        formLabel="Enter the location to view"
-                        buttonText="Ready!"
-                        onChange={handleSelect_location}
-                        action="https://jsonplaceholder.typicode.com/posts"
-                    >
-                        <Option selected value="Click to see options" />
-                        <Option value="Option 1" />
-                        <Option value="Option 2" />
-                        <Option value="Option 3" />
-                    </Dropdown>
+                <div className="show-Data">
+                    <p>
+                        {data.vals}
+                    </p>
                 </div>
             </div>
-
-      </div>
-    )
+        </div>
+    );
 }
-
-
-export default Podst;

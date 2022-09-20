@@ -1,6 +1,7 @@
 from flask import Flask
 from api_funcs import query_db
 from api_funcs import params
+from flask_cors import CORS
 
 from api_funcs.query_files import query_podst
 from api_funcs.query_files import query_dths
@@ -8,6 +9,7 @@ from api_funcs.query_files import query_medchars
 from api_funcs.query_files import query_covdths
 
 app = Flask(__name__)
+CORS(app)
 
 """
 
