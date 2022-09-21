@@ -1,6 +1,16 @@
 import React from 'react';
 import { useState, useEffect } from "react";
 
+function dolocs(elmts,select) {
+    for (var i = 0; i < elmts.length; i++) {
+        var optn = elmts[i];
+        var el = document.createElement("option");
+        el.textContent = optn;
+        el.value = optn;
+        select.appendChild(el);
+    }
+}
+
 export default function Podst() {
     const [data, setdata] = useState({
         loc: "",
@@ -31,6 +41,9 @@ export default function Podst() {
             })
         );
     }, [year, loc]);
+    var select = document.getElementById("locs");
+    var elmtstwo = data.loc;
+    var elmts = [...new Set(elmtstwo)];
 
     return(
         <div className="podst-container">
@@ -55,8 +68,8 @@ export default function Podst() {
                     <form>
                         <select id="locs" onChange={handleChangeLoc}>
                             <option value="all" selected="selected">All</option>
-                            <option value="VA">VA</option>
-                            <option value="AR">AR</option>
+                            {dolocs(elmts,select)}
+                            
                         </select>
                     </form>
                 </div>
