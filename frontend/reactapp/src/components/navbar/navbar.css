@@ -1,17 +1,22 @@
 .navcontainer {
-    background-color:white;
     overflow-x:hidden;
+    margin-top:2%;
 }
 
-.space {
-    background-color:#215d6e;
-    height:40px;
-    overflow-x:hidden;
+.parent imag {
+    padding-top:2%;
+    display:inline-block;
 }
 
-.homeimg {
-    width:4vw;
-    height:4vw;
-    -webkit-filter: invert(1);
-    filter: invert(1);
+.parent {
+    margin: 1rem;
+    text-align: center;
+  }
+  .child {
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+.text {
+    padding-left:4%;
 }

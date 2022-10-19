@@ -1,0 +1,138 @@
+.pred-analysis-cont {
+    background-image: linear-gradient(
+        115deg,
+        hsl(254deg 54% 34%) 22%,
+        hsl(257deg 42% 37%) 33%,
+        hsl(259deg 32% 41%) 44%,
+        hsl(260deg 24% 44%) 56%,
+        hsl(262deg 17% 48%) 67%,
+        hsl(263deg 11% 52%) 78%,
+        hsl(264deg 6% 55%) 89%,
+        hsl(0deg 0% 59%) 100%
+    );
+
+    padding-bottom:5%;
+
+    padding-top:2%;
+}
+
+.page-header {
+    color:white;
+}
+
+.pred {
+    padding-top:5%;
+    padding-bottom:5%;
+    width:40%;
+    height:40%;
+    padding-left:5%;
+    padding-right:5%;
+
+    background-color:white;
+    
+    margin-bottom:-4%;
+    margin-top:-2%;
+    box-shadow: 5px 10px;
+    border-radius:25px;
+
+    margin-bottom:5%;
+}
+
+.pred-header {
+    padding-left:30%;
+    margin-top:-4%
+}
+
+.page-header {
+    margin-top:2%;
+    text-align:center;
+    padding-bottom:3%;
+    
+}
+
+.chart-canvas {
+    padding-bottom:2%;
+}
+
+.sidebyside {
+    margin: 1rem;
+    padding: 2rem 2rem;
+  }
+  .floatchild {
+    display: inline-block;
+    padding: 1rem 1rem;
+    vertical-align: top;
+  }
+
+.floatchild.pred {
+    padding-top:2%;
+}
+.cchoice {
+   margin-left:40%;
+}
+
+.steps-header {
+    margin-top:-10%;
+
+    margin-left:32%;
+
+}
+.floatchild.steps {
+    box-shadow: 5px 10px;
+    margin-bottom:-4%;
+    margin-top:-2%;
+
+    padding-bottom:5%;
+    padding-top:5.5%;
+    width:50%;
+    height:100%;
+    border-radius:25px;
+    margin-left:4.5%;
+    background-color:white;
+}
+
+
+.doctors {
+    margin-top:7%;
+    margin-bottom:5%;
+    border-radius:25px;
+    box-shadow: 5px 10px;
+    width:92%;
+
+    margin-left:4%;
+    height:50vw;
+}
+
+
+.drimgcont {
+    width: 200px;
+    height: 120px;
+
+    margin-top:-7%;
+    padding-bottom:2%;
+    margin-left:4%;
+}
+.drimgcont img {
+    width:70%;
+    height:auto;
+    border-radius: 25px;
+}
+
+.doctors-header {
+    text-align:center;
+}
+
+.doctorVal {
+    padding:2%;
+
+}
+
+.doctors {
+    padding-top:1%;
+    background-color:white;
+}
+
+.predtext {
+    text-align:center;
+    font-weight:bold;
+}

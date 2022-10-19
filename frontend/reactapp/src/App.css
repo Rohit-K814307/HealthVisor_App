@@ -1,5 +1,14 @@
 .App {
-  text-align: center;
+  display: flex;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+ 
+main {
+  padding: 10px;
 }
 
 Router {

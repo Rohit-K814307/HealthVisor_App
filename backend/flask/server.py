@@ -1,12 +1,12 @@
 from flask import Flask
 from api_funcs import query_db
-from api_funcs import params
 from flask_cors import CORS
+from flask import Flask, jsonify
+from api_funcs.condition_predict import load_model,encoded_mapping_func,make_pred
+from api_funcs.doctor_finder.func_doctor_finder import query_data
 
-from api_funcs.query_files import query_podst
-from api_funcs.query_files import query_dths
-from api_funcs.query_files import query_medchars
-from api_funcs.query_files import query_covdths
+model = load_model("api_funcs/model_weights/bert_weights")
+encoded_mapping = encoded_mapping_func()
 
 app = Flask(__name__)
 CORS(app)
@@ -17,102 +17,56 @@ API ENDPOINTS BELOW
 
 """
 
-#sample query for any dataset
-@app.route("/sample-query")
-def samplequery():
-    podst, cov19vac, dths, adshstat, medchars, covdths = query_db.basic_response()
-    return {"podst":podst, "cov19vac":cov19vac, "dths":dths, "adshstat":adshstat, "medchars":medchars, "covdths":covdths}
+#bert model
+@app.route("/predict/<string:text>")
+def modelpredict(text:str):
+
+    description1 = text.replace("-"," ")
+    responseVal = make_pred(description1,encoded_mapping,model)
+
+    return jsonify({"prediction":responseVal})
 
 ################################################################################
 
-#return us the podst data:
-@app.route("/podst/<string:year>/<string:locationabbr>")
-def podst(year:str, locationabbr:str):
-    if locationabbr != "all":
-        location = params.paramizer(locationabbr)
-    else:
-        location = locationabbr
+#symptom steps
+@app.route("/condition-steps/<string:inputVal>")
+def conditionSteps(inputVal:str):
 
-    if year != "all":
-        year = params.paramizer(year)
-    else:
-        year=year
-
-    output, loc, years = query_podst.get_podst_data(year=year,locationabbr=location)
-    return {"vals":output,"loc":loc, "year":years}
-
-    
+    datavals = query_db.basic_response()
+    symptomSteps = datavals[1][1]
+    return jsonify({"steps":symptomSteps.get(inputVal)})
 
 ################################################################################
 
-#return us the cov19vac data:
-@app.route("/cov19vac")
-def cov19vac():
-    pass
-    
+#query for the sentences dataset
+@app.route("/sentence-data")
+def sentenceData():
+    datavals = query_db.basic_response()
+    datavals = datavals[0][1]
+    return jsonify({"data":datavals})
 
 ################################################################################
 
-#return us the dths data:
-@app.route("/dths/<string:location>")
-def dths(location:str):
-    if location != "all":
-        locationval = params.paramizer(location)
-        output_vals,output_weekof,output_ages = query_dths.get_dths_data(location=locationval)
-        
-        return {"values":output_vals,"dates":output_weekof,"ages":output_ages}
-        
-    else:
-        locationval = location
-        output_locs,output_vals,output_weekof,output_ages = query_dths.get_dths_data(location=locationval)
+#query for the descriptions dataset
+@app.route('/description-data/<string:condition>')
+def descriptionData(condition:str):
+    datavals = query_db.basic_response()
+    descriptions = datavals[2][1]
 
-        return {"values":output_vals,"locations":output_locs,
-        "dates":output_weekof,"ages":output_ages}
+    return jsonify({"description":descriptions.get(condition)})
 
 ################################################################################
 
-#return us the adshstat data
-@app.route("/adshstat")
-def adshstat():
-    pass
+#query api to get doctor based on condition, role, city, and state
+@app.route('/find-doctor/<string:city>/<string:state>')
+def findDoctor(city:str,state:str):
+
+    stateVal = state[0:-1] + state[-1].lower()
+
+    return jsonify(query_data(city, stateVal))
+
 
 ################################################################################
-
-#return us the medchars data
-@app.route("/medchars/<string:year>")
-def medchars(year):
-    if year != "all":
-        yearval = params.paramizer(year)
-        output_vals,output_age,output_units,output_year = query_medchars.get_medchars_data(year=yearval)
-        
-        return {'vals':output_vals,'age':output_age,'unit':output_units,'year':output_year}
-        
-    else:
-        yearval = year
-        output_vals,output_age,output_units,output_year = query_medchars.get_medchars_data(year=yearval)
-        
-        return {'vals':output_vals,'age':output_age,'unit':output_units,'year':output_year}
-
-
-
-    
-
-################################################################################
-
-#return us the covdths data
-@app.route("/covdths")
-def covdths():
-    output_vals,output_locs,output_times = query_covdths.get_covdths_data()
-
-    return {'values':output_vals,'locations':output_locs,
-    'start_to_end_times':output_times}
-
-################################################################################
-
-
-
-
-
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(host='0.0.0.0',debug=True,port='9999',use_reloader=False)

@@ -1,4 +1,10 @@
-.container {
+.home-container {
     display:flex;
+    flex-direction:column;
+    background-color:white;
+}
 
+.header-open {
+    width:90vw;
+    margin-left:5%;
 }
