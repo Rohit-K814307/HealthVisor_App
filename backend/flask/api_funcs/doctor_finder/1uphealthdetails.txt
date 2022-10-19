@@ -1,0 +1,11 @@
+Application Name
+HealthVisor
+
+OAuth2 Redirect URL
+http://192.168.4.56:9999/
+
+OAuth2 Client Id
+a4a19da1027bd432223f91d328c6b4b0
+
+OAuth2 Client Secret
+f2662a1b883f3020cef61d5b5c51fa7e

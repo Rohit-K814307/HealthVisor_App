@@ -1,4 +1,5 @@
 FROM postgres
+WORKDIR /db
 ENV POSTGRES_PASSWORD password
 ENV POSTGRES_DB healthvisordb
 COPY dbsetup.sql /docker-entrypoint-initdb.d/

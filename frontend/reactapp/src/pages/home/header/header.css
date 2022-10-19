@@ -1,94 +1,78 @@
-.healthvisor__header {
-    display: flex;
-    flex-direction: row;
+.healthvisor-header {
+    background-image: linear-gradient(
+        115deg,
+        hsl(240deg 92% 25%) 0%,
+        hsl(250deg 69% 30%) 11%,
+        hsl(254deg 54% 34%) 22%,
+        hsl(257deg 42% 37%) 33%,
+        hsl(259deg 32% 41%) 44%,
+        hsl(260deg 24% 44%) 56%,
+        hsl(262deg 17% 48%) 67%,
+        hsl(263deg 11% 52%) 78%,
+        hsl(264deg 6% 55%) 89%,
+        hsl(0deg 0% 59%) 100%
+    );
+
+    backdrop-filter:blur(10px);
+    height:40vw;
+    border-radius:25px;
 }
 
-.healthvisor__header-content {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    flex-direction: column;
-
-    margin-right: 5rem;
-}
-
-.healthvisor__header-content h1 {
-    font-family: var(--font-family);
-    font-weight: 800;
-    font-size: 62px;
-    line-height: 75px;
-    letter-spacing: -0.04em;
+.main-text {
+    padding-top:5%;
     color:white;
-
-    padding-left:13%;
+    text-align:center;
+    margin-right:25%;
+    font-size:xx-large;
 }
 
-.healthvisor__header-image {
-    max-width:60%;
-    max-height:500px;
-    display:flex;
-    flex-direction:column;
-
-    padding-bottom:20%;
+.ref-text {
+    color:white;
+    font-size: large;
+    text-align:left;
+    margin-left:25%;
 }
 
-.healthvisor__header-content__input {
-    width: 130%;
-    margin: 2rem 0 1rem;
-
-    display: flex;
-    flex-direction: row;
-
-    padding-left:12%;
+.button-cont {
+    text-align:center;
+    padding-top:8%;
 }
 
-.healthvisor__header-content__input button {
-    flex: 0.6;
-    width: 50px;
-    min-height: 50px;
-    font-family: var(--font-family);
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 28px;
-    background: #FF6565;
-    border: 2px solid #FF6565;
-    border-radius:25px;
-    color: #fff;
+button {
+    display: inline-block;
+    background-color: blueviolet;
+    border-radius: 10px;
+    border: 4px double #cccccc;
+    color: #eeeeee;
+    text-align: center;
+    font-size: 23px;
+    padding: 20px;
+    width: 200px;
+    transition: all 0.5s;
     cursor: pointer;
-    outline: none;
-
-    border-radius:25px;
-}
-
-@media screen and (max-width: 1050px) {
-    .healthvisor__header {
-        flex-direction: column;
-    }
-
-    .healthvisor__header-content {
-        margin: 0 0 3rem;
-    }
-}
-
-@media screen and (max-width: 650px) {
-    .healthvisor__header-content h1 {
-        font-size: 48px;
-        line-height: 60px;
-    }
-    .healthvisor__header-content__input button {
-        font-size: 16px;
-        line-height: 24px;
-    }
-}
-
-@media screen and (max-width: 490px) {
-    .healthvisor__header-content h1 {
-        font-size: 36px;
-        line-height: 48px;
-    }
-    .healthvisor__header-content__input button {
-        font-size: 12px;
-        line-height: 16px;
-    }
-}
+    margin: 5px;
+  }
+  button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  button:hover {
+    background-color: #f7c2f9;
+  }
+  button:hover span {
+    padding-right: 25px;
+  }
+  button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }

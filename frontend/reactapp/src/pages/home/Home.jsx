@@ -6,13 +6,14 @@ import About from './about/About';
 
 const Home = () => {
     return (
-        <div class="container">
-
-            <Header />
+        <div class="home-container">
+            
+            <div className="header-open">
+                <Header />
+            </div>
 
             <About />
 
-            <Footer />
         </div>
     );
 };

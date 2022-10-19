@@ -1,36 +1,30 @@
-.container {
-    background-color:palegoldenrod;
+.about-container {
+    background-color:white;
     padding:5px;
     display:flex;
     flex-direction:column;
 }
 
-.heading {
-    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
-    color:white; 
+.about-heading {
+    color:black;
     
     padding-left:5%;
 
-    border-radius:25px;
 }
 
 
 
 .about-cont {
-    color:white;
-    background:linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
-    display:flex;
-    flex-direction:column;
+    color:black;
 
-    padding-left:2%;
+
+    padding-left:5%;
     text-align:left;
-    border-radius:25px;
+    padding-right:5%;
 }
 
-.about-content1 {
-    border-radius:25px;
-}
 
-.about-content2 {
-    border-radius:25px;
+.disclaimer {
+    padding-top:5%;
+    margin-bottom:10%;
 }

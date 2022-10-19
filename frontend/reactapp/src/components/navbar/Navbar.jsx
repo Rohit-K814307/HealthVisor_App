@@ -3,6 +3,8 @@ import { Nav, NavLink, NavMenu }
     from "./NavbarElements";
 import './navbar.css';
 import home from './favicon.ico';
+import HomeIcon from '@mui/icons-material/Home';
+import BarChartIcon from '@mui/icons-material/BarChart';
 
 const Navbar = () => {
   return (
@@ -14,10 +16,24 @@ const Navbar = () => {
       <Nav>
         <NavMenu>
           <NavLink to="/" activeStyle>
-            <img class="homeimg" src={home} alt="home" />
+            <div className="parent imag home">
+              <div className="child">
+                <HomeIcon />
+              </div>
+              <div className="child text">
+                <p>Home</p>
+              </div>
+            </div>
           </NavLink>
           <NavLink to="/get-started" activeStyle>
-            Get Started With Health Visor
+            <div className="parent imag getstarted">
+              <div className="child">
+                <BarChartIcon />
+              </div>
+              <div className="child text">
+                <p>Get Started</p>
+              </div>
+            </div>
           </NavLink>
         </NavMenu>
       </Nav>

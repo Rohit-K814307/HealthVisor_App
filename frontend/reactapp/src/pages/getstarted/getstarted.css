@@ -1,44 +1,45 @@
-.container {
-    background: linear-gradient(75deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
-    display:flex;
-    flex-direction:column;
+.gs-header-bg {
+    margin-top:5%;
+    background:url("https://www.nami.org/NAMI/media/NAMI-Media/BlogImageArchive/2016/depression-screening-teaser.jpg");
+    height:37vw;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    
+    background-size: cover;
+
+    text-align:center;
+
+    border-radius:25px;
+    width:80vw;
+
+    margin-left:10vw;
 }
 
-.headerbox {
-    padding:10%;
-    width:15%;
-    height:300px;
-    background-color:#FF6565;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    font-size:3.5vw;
-    border-top-right-radius:15px;
-    border-bottom-right-radius:15px;
-
-    float: left;
+.gs-header-text {
+    padding-top:20%;
+}
+.gs-whitespace {
+    height:5vw;
 }
 
-.header {
-    padding:5%;
-}
+.gs-funcs {
+    background-image: linear-gradient(
+        115deg,
+        hsl(240deg 92% 25%) 0%,
+        hsl(250deg 69% 30%) 11%,
+        hsl(254deg 54% 34%) 22%,
+        hsl(257deg 42% 37%) 33%,
+        hsl(259deg 32% 41%) 44%,
+        hsl(260deg 24% 44%) 56%,
+        hsl(262deg 17% 48%) 67%,
+        hsl(263deg 11% 52%) 78%,
+        hsl(264deg 6% 55%) 89%,
+        hsl(0deg 0% 59%) 100%
+    );
 
-.functionality-content {
-    left:70%;
-    top:20%;
-}
+    height:50vw;
 
-.getstarted-content {
-    width:100%;
-}
-
-.inplace_of_functionality {
-    color:white;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    padding:5%;
-    vertical-align: middle;
-
-    bottom:80%;   
+    padding-top:7;
 }
