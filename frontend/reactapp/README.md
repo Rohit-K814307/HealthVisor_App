@@ -1,3 +1,11 @@
+# Changing API URL for compatibility
+
+Based on your network, the Flask API URL will change, so be sure to change the API `url` in the [Prediction Analysis File](src/pages/prediction_analysis/Prediction_analysis.jsx) in line 13 
+
+and in the [Input Box File](src/pages/getstarted/Inputbox.jsx) in line 39
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
