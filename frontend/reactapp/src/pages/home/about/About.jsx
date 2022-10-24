@@ -10,8 +10,10 @@ const About = () => {
 
             <div className="about-cont">
                 <p className="about-content1">
-                    Health Visor is a Web-based application that allows you to easily view your health condition based on your symptoms.
-                    Simply type in your symptoms, and we will find your health conditon. Regardless of
+                    Health Visor is a Artificial Intelligence (AI) powered web-based application 
+                    that allows you to easily view your health condition based on your symptoms.
+                    Simply type in your symptoms, and we will find your health conditon. Regardless 
+                    of
                     where you are, what condition you have, or your economic status, we will
                     give you your health conditon, steps to prevent the condition from worsening,
                     and the nearest doctors to you.

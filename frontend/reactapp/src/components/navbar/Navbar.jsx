@@ -15,6 +15,14 @@ const Navbar = () => {
       </div>
       <Nav>
         <NavMenu>
+
+          <div className="img-hv">
+            <div className="img-hv-child">
+              <h2 className="health">Health Visor</h2>
+              <h3 className="visor">AI Driven Health Platform</h3>
+            </div>
+          </div>
+
           <NavLink to="/" activeStyle>
             <div className="parent imag home">
               <div className="child">

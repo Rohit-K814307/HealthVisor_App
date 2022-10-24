@@ -1,6 +1,8 @@
 .navcontainer {
     overflow-x:hidden;
     margin-top:2%;
+
+    margin-left:-8%;
 }
 
 .parent imag {
@@ -19,4 +21,43 @@
 
 .text {
     padding-left:4%;
+}
+
+.img-hv-child {
+  text-align:center;
+  background-image: linear-gradient(
+        115deg,
+        hsl(240deg 92% 25%) 0%,
+        hsl(250deg 69% 30%) 11%,
+        hsl(254deg 54% 34%) 22%,
+        hsl(257deg 42% 37%) 33%,
+        hsl(259deg 32% 41%) 44%,
+        hsl(260deg 24% 44%) 56%,
+        hsl(262deg 17% 48%) 67%,
+        hsl(263deg 11% 52%) 78%,
+        hsl(264deg 6% 55%) 89%,
+        hsl(0deg 0% 59%) 100%
+    );
+    padding-left:3px;
+    padding-right:3px;
+    padding-top:0.2px;
+    padding-bottom:0.5px;
+    border-radius:5px;
+
+}
+
+.img-hv {
+  padding-right:3%;
+}
+
+.visor {
+  margin-top:-15%;
+  color:white;
+  font-size:xx-small;
+  
+}
+
+.health {
+  color:white;
+  font-size:x-large;
 }
