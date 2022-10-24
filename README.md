@@ -9,3 +9,7 @@ Our advanced Artificial Intelligence model was trained on over 600,000 data samp
 # Disclaimer
 
 The Health Visor application does not track your data and only uses it for AI analysis. Additionally, dial 911 if you have a life threatening emergency.
+
+# Docs
+
+Available at  https://rohit-k814307.github.io/Health_Visor_App/
