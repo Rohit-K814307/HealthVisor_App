@@ -17,6 +17,7 @@ const Footer = () => {
 
         <div class="footer-bottom">
           <p>Made by <a href="https://www.linkedin.com/in/rohit-kulkarni-305a86202/">Rohit Kulkarni</a>  </p>
+          <p>ⓒ Health Visor 2022</p>
         </div>
 
 
