@@ -10,7 +10,7 @@ The database was built using postgres and hosted in docker. `import psycopg2` to
 
 Follow the instructions in [the database docs](https://github.com/Rohit-K814307/Health_Visor_App/tree/master/backend/database#readme) to create a docker container with all the data.
 
-The (add data file)[https://github.com/Rohit-K814307/Health_Visor_App/blob/master/backend/database/db/db_data_setup/add_data.py] inserts the data in the database.
+The [add data file](https://github.com/Rohit-K814307/Health_Visor_App/blob/master/backend/database/db/db_data_setup/add_data.py) inserts the data in the database.
 Change the information to be inserted into the db to change use
 
 
