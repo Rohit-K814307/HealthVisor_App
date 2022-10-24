@@ -1,4 +1,11 @@
 
-# Health_Visor_App
+# About Health Visor
 
-Health Visor is a Web-based application that allows anyone to view all the publicly available healthcare related data, for the population of a specific congressional district.  Our advanced Artificial Intelligence technologies allow users to view future data from current data and how the data for a specific congressional district will change over time.
+Health Visor is a Artificial Intelligence (AI) powered web-based application that allows you to easily view your health condition based on your symptoms. Simply type in your symptoms, and we will find your health conditon. Regardless of where you are, what condition you have, or your economic status, we will give you your health conditon, steps to prevent the condition from worsening, and the nearest doctors to you.
+
+Our advanced Artificial Intelligence model was trained on over 600,000 data samples of patient inputs, and tested on over 400,000 samples. Our models have an accuracy of just over 99%, so our results are accurate.
+
+
+# Disclaimer
+
+The Health Visor application does not track your data and only uses it for AI analysis. Additionally, dial 911 if you have a life threatening emergency.
