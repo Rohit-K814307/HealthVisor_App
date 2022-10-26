@@ -5,12 +5,12 @@ const About = () => {
     return (
         <div class="about-container">
             <h1 className="about-heading">
-                About Health Visor
+                About HealthVisor
             </h1>
 
             <div className="about-cont">
                 <p className="about-content1">
-                    Health Visor is a Artificial Intelligence (AI) powered web-based application 
+                    HealthVisor is a Artificial Intelligence (AI) powered web-based application 
                     that allows you to easily view your health condition based on your symptoms.
                     Simply type in your symptoms, and we will find your health conditon. Regardless 
                     of
@@ -28,7 +28,7 @@ const About = () => {
                 <div className="disclaimer">
                     <h2 className="disclaimer-heading">Disclaimer</h2>
                     <p>
-                        The Health Visor application does not track your data and 
+                        The HealthVisor application does not track your data and 
                         only uses it for AI analysis. Additionally, dial 911 if you
                         have a life threatening emergency. 
                     </p>

@@ -18,7 +18,7 @@ const Navbar = () => {
 
           <div className="img-hv">
             <div className="img-hv-child">
-              <h2 className="health">Health Visor</h2>
+              <h2 className="health">HealthVisor</h2>
               <h3 className="visor">AI Driven Health Platform</h3>
             </div>
           </div>
