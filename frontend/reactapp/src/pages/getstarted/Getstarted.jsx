@@ -6,7 +6,7 @@ const Getstarted = () => {
     return (
         <div className="getstarted-container">
             <div className="gs-header-bg">
-                <h1 className="gs-header-text">Get Started with Health Visor</h1>
+                <h1 className="gs-header-text">Get Started with HealthVisor</h1>
             </div>
 
             
