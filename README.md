@@ -1,4 +1,6 @@
 
+[](docs/Health Visor Cover img.jpg)
+
 # About Health Visor
 
 Health Visor is a Artificial Intelligence (AI) powered web-based application that allows you to easily view your health condition based on your symptoms. Simply type in your symptoms, and we will find your health conditon. Regardless of where you are, what condition you have, or your economic status, we will give you your health conditon, steps to prevent the condition from worsening, and the nearest doctors to you.
