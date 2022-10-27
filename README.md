@@ -1,5 +1,5 @@
 
-![]([docs/Health Visor Cover img.jpg](https://github.com/Rohit-K814307/HealthVisor_App/blob/master/docs/Health%20Visor%20Cover%20img.jpg?raw=true))
+![hvimg]([docs/Health Visor Cover img.jpg](https://github.com/Rohit-K814307/HealthVisor_App/blob/master/docs/Health%20Visor%20Cover%20img.jpg?raw=true))
 
 # About Health Visor
 
