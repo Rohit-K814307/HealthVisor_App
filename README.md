@@ -14,4 +14,4 @@ The Health Visor application does not track your data and only uses it for AI an
 
 # Docs
 
-Available at  https://rohit-k814307.github.io/Health_Visor_App/
+Available at  https://rohit-k814307.github.io/HealthVisor_App/
