@@ -16,6 +16,16 @@ Our advanced Artificial Intelligence model was trained on over 600,000 data samp
 ## Youtube Demo Link
 https://youtu.be/pMAKvq1wKOw
 
+## Sample inputs and results
+
+#### Inputs of chest pain and breathlessness
+![hvimg1](https://github.com/Rohit-K814307/HealthVisor_App/blob/master/docs/hv_inputs.png "HealthVisor Sample")
+
+#### Results page
+
+![hvimg2](https://github.com/Rohit-K814307/HealthVisor_App/blob/master/docs/diagnosis_profile.png "HealthVisor Sample")
+![hvimg3](https://github.com/Rohit-K814307/HealthVisor_App/blob/master/docs/doctors_results.png "HealthVisor Sample")
+
 ## Home Page
 ![hvhome](https://github.com/Rohit-K814307/HealthVisor_App/blob/master/docs/hv_home.png "HealthVisor Home Page")
 
@@ -26,3 +36,5 @@ The HealthVisor application does not track your data and only uses it for AI ana
 # Docs
 
 Available at  https://rohit-k814307.github.io/HealthVisor_App/
+
+Designed and Implemented by Rohit Kulkarni
