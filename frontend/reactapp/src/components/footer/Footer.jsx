@@ -10,8 +10,7 @@ const Footer = () => {
 
         <p>
           HealthVisor is an AI powered application that
-          can easily find healthcare-related information about the population
-          of a specific congressional district in the US. Thank you for visiting
+          Prevents complications, Protects Patients from illnesses, and Connects patients with doctors. Thank you for visiting
           the site!
         </p>
 
