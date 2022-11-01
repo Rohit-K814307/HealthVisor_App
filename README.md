@@ -7,8 +7,14 @@ HealthVisor is a Artificial Intelligence (AI) powered web-based application that
 
 Our advanced Artificial Intelligence model was trained on over 600,000 data samples of patient inputs, and tested on over 400,000 samples. Our models have an accuracy of just over 99%, so our results are accurate.
 
+# App Architecture 
 ![hvarchitecture](https://github.com/Rohit-K814307/HealthVisor_App/blob/master/docs/hv_architecture.png "HealthVisor Architecture")
 
+
+# HealthVisor App Demos
+![hvdemo](https://github.com/Rohit-K814307/HealthVisor_App/blob/master/docs/hv_results_AdobeExpress.gif "HealthVisor Demo")
+
+## Home Page
 ![hvhome](https://github.com/Rohit-K814307/HealthVisor_App/blob/master/docs/hv_home.png "HealthVisor Home Page")
 
 # Disclaimer
