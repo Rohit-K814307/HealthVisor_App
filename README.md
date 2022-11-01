@@ -12,7 +12,7 @@ Our advanced Artificial Intelligence model was trained on over 600,000 data samp
 
 
 # HealthVisor App Demos
-![hvdemo](https://github.com/Rohit-K814307/HealthVisor_App/blob/master/docs/hv_results_AdobeExpress.gif "HealthVisor Demo")
+<img src="(https://github.com/Rohit-K814307/HealthVisor_App/blob/master/docs/hv_results_AdobeExpress.gif" width="400" height="400">
 
 ## Home Page
 ![hvhome](https://github.com/Rohit-K814307/HealthVisor_App/blob/master/docs/hv_home.png "HealthVisor Home Page")
